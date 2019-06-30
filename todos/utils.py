@@ -18,8 +18,10 @@ def parse_date(date_str):
 
 
 def parse_int(value):
-    pass
-
+    try:
+        return int(value)
+    except:
+        return None
 
 def serialize(tasks):
     new_tasks = []
